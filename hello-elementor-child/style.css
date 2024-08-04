@@ -65,12 +65,41 @@ Updated: 2024-07-24 21:37:29
 	transform: translate(-50%, -50%);
 
 }
-/* Style pour les labels */
-#wpcf7-f151-p157-o1 .wpcf7-label {
+/* Styles pour le conteneur du formulaire */
+#wpcf7-f151-p157-o1 .wpcf7-form {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Alignement vertical des éléments */
+  align-items: center; /* Centre les éléments horizontalement */
+}
+
+/* Style pour les champs de texte et email */
+#wpcf7-f151-p157-o1 .wpcf7-email, 
+#wpcf7-f151-p157-o1 .wpcf7-textarea, 
+#wpcf7-f151-p157-o1 .wpcf7-text {
   padding: 10px;   
+  border: 0px;
+  border-radius: 7px;
   font-family: syne;
   font-size: 20px;
   font-weight: 400;
-  color: #c50a0a;  
-  text-align: left;
+  color: #000000;
+  background: #FFFFFF;
+}
+
+
+
+/* Style pour le bouton de soumission */
+#wpcf7-f151-p157-o1 .wpcf7-submit {
+  background: #E0B9B4;        
+  color: #e8eaed;             
+  font-size: 15px;            
+  font-weight: 400;          
+  border-radius: 5px;
+  border: 0;     
+  line-height: 37px;
+  width: 198px;
+  height: 55px;
+  display: block; /* Assure que le bouton est un bloc */
+  margin: 20px auto; /* Centre le bouton et ajoute une marge au-dessus et en dessous */
 }
