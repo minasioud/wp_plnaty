@@ -53,7 +53,6 @@ Updated: 2024-07-24 21:37:29
   font-size: 16px;
   line-height: 20px;
   margin: 10px;
-  /*padding 0 px;*/
   text-align: center;
 	}
 #img-contact {
@@ -70,13 +69,14 @@ Updated: 2024-07-24 21:37:29
   position: relative;
   display: flex;
   flex-direction: column; /* Alignement vertical des éléments */
-  align-items: center; /* Centre les éléments horizontalement */
+  /*align-items: center; /* Centre les éléments horizontalement */
 }
 
 /* Style pour les champs de texte et email */
 #wpcf7-f151-p157-o1 .wpcf7-email, 
 #wpcf7-f151-p157-o1 .wpcf7-textarea, 
-#wpcf7-f151-p157-o1 .wpcf7-text {
+#wpcf7-f151-p157-o1 .wpcf7-text{
+
   padding: 10px;   
   border: 0px;
   border-radius: 7px;
@@ -87,10 +87,9 @@ Updated: 2024-07-24 21:37:29
   background: #FFFFFF;
 }
 
-
-
 /* Style pour le bouton de soumission */
-#wpcf7-f151-p157-o1 .wpcf7-submit {
+#wpcf7-f151-p157-o1 .wpcf7-submit,
+#wpcf7-f898-p563-o1 .wpcf7-submit {
   background: #E0B9B4;        
   color: #e8eaed;             
   font-size: 15px;            
@@ -102,4 +101,169 @@ Updated: 2024-07-24 21:37:29
   height: 55px;
   display: block; /* Assure que le bouton est un bloc */
   margin: 20px auto; /* Centre le bouton et ajoute une marge au-dessus et en dessous */
+}
+
+#wpcf7-f151-p157-o1 .wpcf7-submit:hover,
+#wpcf7-f898-p563-o1 .wpcf7-submit:hover {
+  background: #C02E44;
+}
+/* Style pour les labels */
+#wpcf7-f151-p157-o1 label {
+  padding: 10px;   
+  font-family: syne;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;  
+  text-align: left;
+}
+
+
+/* Formulaire de contact COMMADER */
+/* Styles pour diviser le formulaire en deux colonnes */
+#wpcf7-f898-p563-o1 .wpcf7-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Centrer le contenu horizontalement */
+}
+
+#wpcf7-f898-p563-o1 .left-section,
+#wpcf7-f898-p563-o1 .right-section { 
+  width: 50%;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Formulaire de contact de GAUCHE : */
+#wpcf7-f898-p563-o1 .left-section {
+  /* Ajouter une ligne de séparation entre les deux colonnes */  
+  border-right: 1px solid #ccc; /* Couleur et style de la ligne de séparation */
+  /*border: 1px solid #ff00bf;*/
+}
+/* Formulaire de contact de DROIITE : */
+#wpcf7-f898-p563-o1 .right-section {
+  /*border: 1px solid #15ff00;*/
+  /*transform: scaleX(-1); /* Réinverser les éléments internes */
+ /* text-align: right; /* Alignement du texte à droite */
+}
+
+
+#wpcf7-f898-p563-o1 .right-section h2 {
+  margin-left: 10%;
+}
+#wpcf7-f898-p563-o1 .right-section label {
+ /* border: 1px solid #0804ff;  */
+  /*text-align: right; /* Réinverser l'alignement du texte interne */
+  margin-left: 10%;
+}
+#wpcf7-f898-p563-o1 .right-section .wpcf7-text {
+  /*border: 1px solid #0804ff;  */
+  transform: scaleX(1); /* Réinverser les éléments internes */
+  margin-left: 10%;
+}
+
+
+/* Style pour le bouton de soumission */
+#wpcf7-f898-p563-o1 .submit-section {
+  width: 100%;
+  text-align: center; /* Centrer le bouton */
+  margin-top: 10px;
+}
+
+#wpcf7-f898-p563-o1 .wpcf7-email,
+#wpcf7-f898-p563-o1 .wpcf7-text,
+#wpcf7-f898-p563-o1 .wpcf7-textarea {
+width: 90%;
+align-items: center;
+margin-bottom:5px;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+}
+
+
+
+#wpcf7-f898-p563-o1 h2 {
+  width: 90%;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: syne;
+  color: #FFFFFF; /* Couleur du texte */
+  margin-bottom: 5px;
+}
+#wpcf7-f898-p563-o1 label {
+  padding: 10px;   
+  font-family: syne;
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFFFFF;  
+  text-align: left;
+}
+
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 767px) */
+@media (max-width: 767px) {
+
+  /* Formulaire de contact COMMADER */
+/* Styles pour diviser le formulaire en deux colonnes */
+#wpcf7-f898-p563-o1 .wpcf7-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Centrer le contenu horizontalement */
+}
+
+#wpcf7-f898-p563-o1 .left-section,
+#wpcf7-f898-p563-o1 .right-section { 
+  width: 95%;
+  box-sizing: border-box;
+ /* padding-top: 10px;
+  padding-bottom: 10px;*/
+  padding: 10px;
+}
+
+/* Formulaire de contact de GAUCHE : */
+#wpcf7-f898-p563-o1 .left-section {
+  /* Ajouter une ligne de séparation entre les deux colonnes */  
+  
+  border: 0px solid #ff00bf;
+}
+/* Formulaire de contact de DROIITE : */
+#wpcf7-f898-p563-o1 .right-section {
+/*  border: 1px solid #15ff00;*/
+
+}
+
+
+#wpcf7-f898-p563-o1 .right-section h2 {
+  text-align: left;
+  margin-left: 0%;
+}
+#wpcf7-f898-p563-o1 .right-section label {
+  /*border: 1px solid #0804ff; */
+  /*text-align: right; /* Réinverser l'alignement du texte interne */
+  margin-left: 0%;
+  
+}
+#wpcf7-f898-p563-o1 .right-section .wpcf7-text {
+  /*border: 1px solid #0804ff;  */
+ /* transform: scaleX(1); /* Réinverser les éléments internes */
+ margin-left: 0%;
+ 
+}
+#wpcf7-f898-p563-o1 .wpcf7-email,
+#wpcf7-f898-p563-o1 .wpcf7-text,
+#wpcf7-f898-p563-o1 .wpcf7-textarea {
+width: 95%;
+align-items: center;
+margin-bottom:5px;
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+}
+
 }
