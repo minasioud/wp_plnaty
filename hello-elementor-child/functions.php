@@ -22,3 +22,15 @@ endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // END ENQUEUE PARENT ACTION
+
+add_filter('wp_nav_menu_items', 'ad_filter_admin', 10, 1);
+
+function ad_filter_admin($items) {
+    if (is_user_logged_in())
+    {
+        $items .= '<li id="menu-item-555" class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"><a href="https://planty/admin" class="hfe-menu-item">Admin</a></li>';  
+    } 
+    
+    return $items;
+
+}
