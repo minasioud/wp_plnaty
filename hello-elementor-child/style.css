@@ -10,6 +10,13 @@ Version: 3.1.0.1721849849
 Updated: 2024-07-24 21:37:29
 
 */
+
+/* Sélectionne les éléments du menu de navigation et applique le style en gras */
+#menu-1-459b8b8 li a:hover {
+  font-weight: 700;
+
+}
+
 .product-item {
   position: relative;
   width: 200px; /* Assurez-vous que le conteneur parent a une largeur définie */
@@ -229,7 +236,7 @@ font-size: 16px;
 #wpcf7-f898-p563-o1 .left-section {
   /* Ajouter une ligne de séparation entre les deux colonnes */  
   
-  border: 0px solid #ff00bf;
+  border:none;
 }
 /* Formulaire de contact de DROIITE : */
 #wpcf7-f898-p563-o1 .right-section {
