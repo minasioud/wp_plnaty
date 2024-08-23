@@ -29,7 +29,7 @@ function ad_filter_admin($items, $args) {
 
     if (is_user_logged_in() && $args->menu === 'menu') {
     
-        $items .= '<li id="menu-item-555" class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"><a href="https://planty/admin" class="hfe-menu-item">Admin</a></li>';  
+        $items .= '<li  class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu"><a href="https://planty/admin" class="hfe-menu-item">Admin</a></li>';  
     }
     return $items;
 }
